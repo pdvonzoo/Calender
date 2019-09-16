@@ -1,0 +1,33 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: auto;
+  padding: 0 3rem;
+  min-width: 800px;
+  max-width: 1500px;
+}
+
+.sun {
+  color: #af0404;
+}
+
+.sat {
+  color: #112f91;
+}
+
+.timeline .time-value {
+  margin-top: -1px;
+  height: 3rem;
+  line-height: 3rem;
+  padding-right: 1rem;
+  border: 1px solid #bbb;
+  text-align: right;
+}
+.content .calendar {
+  display: none;
+}
+.content .calendar.active {
+  display: block;
+}

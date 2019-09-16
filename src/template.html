@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calender</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="date-container">
+        <span class="current-date"></span>
+        <div class="date-navigator">
+          <button class="date-navigator-prev">&#60;</button>
+          <button class="date-navigator-next">&#62;</button>
+          <button class="date-navigator-current">오늘</button>
+        </div>
+      </div>
+      <nav class="date-type">
+        <ul class="date-type-container">
+          <li class="date-type-item" id="daily">일간</li>
+          <li class="date-type-item" id="weekly">주간</li>
+          <li class="date-type-item active" id="monthly">월간</li>
+        </ul>
+      </nav>
+      <button class="add-event">일정 추가</button>
+    </header>
+    <main class="content">
+      <div class="calendar monthly active">
+        <div class="month-navigator">
+          <button class="prev">&#60;</button>
+          <span class="monthInfo"></span>
+          <button class="next">&#62;</button>
+        </div>
+        <div class="monthly-header">
+          <div class="day-name sun">일</div>
+          <div class="day-name">월</div>
+          <div class="day-name">화</div>
+          <div class="day-name">수</div>
+          <div class="day-name">목</div>
+          <div class="day-name">금</div>
+          <div class="day-name sat">토</div>
+        </div>
+        <div class="monthly-body"></div>
+      </div>
+      <div class="calendar weekly">
+        <div class="week-navigator">
+          <button class="prev">&#60;</button>
+          <span class="weekInfo"></span>
+          <button class="next">&#62;</button>
+        </div>
+        <div class="weekly">
+          <aside class="timeline">
+            <div class="time-value"></div>
+            <div class="time-value">24시</div>
+            <div class="time-value">1시</div>
+            <div class="time-value">2시</div>
+            <div class="time-value">3시</div>
+            <div class="time-value">4시</div>
+            <div class="time-value">5시</div>
+            <div class="time-value">6시</div>
+            <div class="time-value">7시</div>
+            <div class="time-value">8시</div>
+            <div class="time-value">9시</div>
+            <div class="time-value">10시</div>
+            <div class="time-value">11시</div>
+            <div class="time-value">12시</div>
+            <div class="time-value">13시</div>
+            <div class="time-value">14시</div>
+            <div class="time-value">15시</div>
+            <div class="time-value">16시</div>
+            <div class="time-value">17시</div>
+            <div class="time-value">18시</div>
+            <div class="time-value">19시</div>
+            <div class="time-value">20시</div>
+            <div class="time-value">21시</div>
+            <div class="time-value">22시</div>
+            <div class="time-value">23시</div>
+          </aside>
+          <div class="weekly-main">
+            <div class="weekly-header"></div>
+            <div class="weekly-body">
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+              <div class="time-container">
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+                <div class="time"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calendar daily">
+        <div class="daily">
+          <aside class="timeline">
+            <div class="time-value"></div>
+            <div class="time-value">24시</div>
+            <div class="time-value">1시</div>
+            <div class="time-value">2시</div>
+            <div class="time-value">3시</div>
+            <div class="time-value">4시</div>
+            <div class="time-value">5시</div>
+            <div class="time-value">6시</div>
+            <div class="time-value">7시</div>
+            <div class="time-value">8시</div>
+            <div class="time-value">9시</div>
+            <div class="time-value">10시</div>
+            <div class="time-value">11시</div>
+            <div class="time-value">12시</div>
+            <div class="time-value">13시</div>
+            <div class="time-value">14시</div>
+            <div class="time-value">15시</div>
+            <div class="time-value">16시</div>
+            <div class="time-value">17시</div>
+            <div class="time-value">18시</div>
+            <div class="time-value">19시</div>
+            <div class="time-value">20시</div>
+            <div class="time-value">21시</div>
+            <div class="time-value">22시</div>
+            <div class="time-value">23시</div>
+          </aside>
+          <div class="daily-main">
+            <div class="daily-header"></div>
+            <div class="daily-body">
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+              <div class="time"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside class="popup_cover">
+      <form class="popup_form">
+        <div class="popup">
+          <div class="popup-header">
+            <h3>일정추가</h3>
+            <button class="close">X</button>
+          </div>
+          <div class="popup-body">
+            <label>
+              <span class="label-text">제목</span>
+              <input class="title" type="text" />
+            </label>
+            <label>
+              <span class="label-text">시작일</span>
+              <input class="start_at" type="date" />
+            </label>
+            <label>
+              <span class="label-text">종료일</span>
+              <input class="end_at" type="date" />
+            </label>
+            <label>
+              <span class="label-text">시간</span>
+              <input class="start_time" type="time" />
+            </label>
+            <label>
+              <span class="label-text">메모</span>
+              <textarea class="memo"></textarea>
+            </label>
+          </div>
+          <button class="submit">저장</button>
+          <div class="update-delete">
+            <button class="delete two-btn">삭제</button>
+            <button class="update two-btn">수정</button>
+          </div>
+        </div>
+      </form>
+    </aside>
+    <aside class="tasks_cover">
+      <div class="tasks_container">
+        <button class="close-task-list">close</button>
+        <h3 class="heading3">tasks</h3>
+        <ul class="task_list"></ul>
+      </div>
+    </aside>
+  </body>
+</html>

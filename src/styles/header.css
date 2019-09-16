@@ -1,0 +1,58 @@
+.header {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-container {
+  display: flex;
+  align-items: center;
+}
+
+.date-container .current-date {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.date-container .date-navigator {
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.date-container .date-navigator > button {
+  font-size: 1.4rem;
+  margin-left: -0.1rem;
+  line-height: 1.8rem;
+  background-color: inherit;
+}
+
+.date-type-container {
+  display: flex;
+}
+
+.date-type-container .date-type-item {
+  border: 0.1rem solid #bbbbbb;
+  margin-left: -0.1rem;
+  padding: 0.8rem 1rem 0.5rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.date-type-container .date-type-item:hover {
+  background-color: #f6d365;
+}
+
+.date-type-container .date-type-item.active {
+  background-color: #f6d365;
+}
+
+.add-event {
+  background-color: inherit;
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.8rem;
+  outline: none;
+  font-size: 1.3rem;
+}

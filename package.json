@@ -1,0 +1,32 @@
+{
+  "name": "Calendar_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pdvonzoo/Calendar_project.git",
+  "author": "pdvonzoo <a01088570194@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "2.1.0",
+    "file-loader": "3.0.1",
+    "fs-extra": "7.0.1",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "puppeteer": "^1.19.0",
+    "style-loader": "^0.23.1",
+    "uuid": "^3.3.2",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.1"
+  }
+}

@@ -1,0 +1,140 @@
+.monthly {
+  width: 100%;
+}
+
+.monthly .month-navigator {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.monthly .month-navigator > button {
+  padding-bottom: 0.5rem;
+  border: 1px solid #bbb;
+  background-color: inherit;
+}
+
+.monthly-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.monthly-header .day-name {
+  flex: 1;
+  padding: 0.7rem 0 1.5rem 0.5rem;
+  background-color: #bbb;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.monthly-body .week {
+  display: flex;
+}
+
+.monthly-body .week .day {
+  position: relative;
+  flex: 1;
+  margin-left: -1px;
+  margin-top: -1px;
+  padding: 1rem 0;
+  border: 1px solid #bbb;
+  height: 15rem;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.monthly-body .week .day.active {
+  background-color: #bbb;
+}
+
+.monthly-body .week .day .plus-btn {
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.2rem;
+  font-size: 3rem;
+  border: 0;
+  border-radius: 50%;
+  width: 3.4rem;
+  height: 3.4rem;
+  text-align: center;
+  line-height: 3.8rem;
+  color: #fff;
+  background-color: #f6d365;
+  cursor: pointer;
+}
+.monthly-body .week .day .task {
+  font-size: 0;
+  position: absolute;
+  margin-right: -0.1rem;
+  padding-left: 0.3rem;
+  width: 100%;
+  height: 4rem;
+  background-color: #eee;
+  cursor: pointer;
+}
+.monthly-body .week .day .task.start {
+  display: flex;
+  padding-left: 0.8rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  width: 95%;
+  font-size: 1.8rem;
+  color: #eee;
+  align-items: center;
+  white-space: nowrap;
+  z-index: 9;
+}
+.monthly-body .week .day .task.sat {
+  left: 0;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  width: 95%;
+}
+.monthly-body .week .day .task.sat:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+.monthly-body .week .day .task.sun {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  width: 95%;
+}
+
+.monthly-body .week .day .task.sun:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+
+.monthly-body .week .day .task.end {
+  left: -0.3rem;
+  width: 95%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.monthly-body .week .day.current-day {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #cf455c;
+}
+
+.monthly-body .week .day.prev-mon,
+.monthly-body .week .day.next-mon {
+  color: #ccc;
+}

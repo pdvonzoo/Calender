@@ -1,0 +1,126 @@
+.daily {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.daily .timeline {
+  flex: 1;
+}
+
+.daily .daily-main {
+  flex: 7;
+}
+
+.daily .daily-main .daily-header {
+  margin-top: -1px;
+  border: 1px solid #bbb;
+}
+
+.daily .daily-main .daily-header .day-name {
+  position: relative;
+  padding-left: 0.5rem;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #eee;
+  font-weight: bold;
+}
+
+.daily .daily-main .daily-header .day-name .task {
+  position: absolute;
+  width: 100%;
+  height: 2.3rem;
+}
+
+.daily .daily-main .daily-header .day-name .task.start {
+  color: #eee;
+  padding-left: 1rem;
+  width: 90%;
+  right: 0;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  align-items: center;
+  white-space: nowrap;
+  z-index: 9;
+}
+.daily .daily-main .daily-header .day-name .task.end {
+  left: 0;
+  width: 92%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.daily .daily-main .daily-header .day-name .task.going {
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.daily .daily-main .daily-header .day-name .task.going:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0.7rem;
+  transform: translateY(-50%);
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+}
+
+.daily .daily-main .daily-header .day-name .task.continue {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.daily .daily-main .daily-header .day-name .task.continue:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.7rem;
+  transform: translateY(-50%);
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+}
+.daily .daily-main .daily-header .day-name .task.going.continue {
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.weekly .weekly-main .weekly-header .day-name .task.continue:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.7rem;
+  transform: translateY(-50%);
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+}
+.daily .daily-main .daily-header .day-name .task.going.continue:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0.7rem;
+  transform: translateY(-50%);
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+}
+
+.daily .daily-main .daily-body .time {
+  margin-top: -1px;
+  margin-left: -1px;
+  border: 1px solid #bbb;
+  height: 3rem;
+  line-height: 3rem;
+}
